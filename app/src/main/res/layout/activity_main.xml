@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="1dp"
+        android:paddingRight="2dp"
+        android:paddingTop="75dp"
+        android:paddingBottom="16dp" tools:context=".MainActivity"
+        android:background="@drawable/inicio">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_txt_user"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="55dp"
+        android:hint="Nombre de usuario"
+        android:textColorHint="#ffffff"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/ed_txt_pass"
+        android:hint="Contraseña"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="55dp"
+        />
+
+    <ImageButton
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:text="Entrar"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/ed_txt_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/iniciar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="¿Aún no tienes una cuenta?"
+        android:id="@+id/tv_txt_registrarse"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
